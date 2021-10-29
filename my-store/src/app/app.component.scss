@@ -1,0 +1,30 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  div {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    h2,
+    p {
+      margin: 0;
+    }
+  }
+}
+//tablet
+@media screen and (min-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+  }
+}
